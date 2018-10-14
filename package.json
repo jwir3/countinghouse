@@ -1,0 +1,31 @@
+{
+  "name": "countinghouse",
+  "version": "0.0.1",
+  "description": "An accounting app written using electron.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwir3/countinghouse.git"
+  },
+  "keywords": [
+    "accounting",
+    "business",
+    "tools",
+    "double-entry",
+    "balance-sheet",
+    "accounts"
+  ],
+  "author": "Scott Johnson <jaywir3@gmail.com>",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/jwir3/countinghouse/issues"
+  },
+  "homepage": "https://github.com/jwir3/countinghouse#readme",
+  "devDependencies": {
+    "electron": "^3.0.4"
+  }
+}
