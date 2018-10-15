@@ -5,7 +5,32 @@
   "main": "src/main.js",
   "scripts": {
     "start": "electron .",
-    "test": "npm test"
+    "test": "npm test",
+    "package": "build --x64 --publish never"
+  },
+  "build": {
+    "appId": "com.jwir3.countinghouse",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "resources/windows/icon.ico"
+    },
+    "nsis": {
+      "oneClick": true,
+      "installerHeaderIcon": "resources/windows/setup-icon.ico"
+    },
+    "mac": {
+      "icon": "resources/osx/icon.icns",
+      "category": "calendar"
+    },
+    "dmg": {
+      "icon": "resources/osx/logo-dmg.icns",
+      "background": "resources/osx/dmg-background.png"
+    },
+    "directories": {
+      "buildResources": "resources"
+    }
   },
   "repository": {
     "type": "git",
@@ -26,6 +51,7 @@
   },
   "homepage": "https://github.com/jwir3/countinghouse#readme",
   "devDependencies": {
-    "electron": "^3.0.4"
+    "electron": "^3.0.4",
+    "electron-builder": "^20.28.4"
   }
 }
