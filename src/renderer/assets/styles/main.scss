@@ -1,0 +1,36 @@
+@import '~@/assets/styles/_defaults.scss';
+@import '~@/assets/styles/_text.scss';
+@import '~@/assets/styles/_buttons.scss';
+@import '~@/assets/styles/_colors.scss';
+
+#wrapper {
+  background:
+    radial-gradient(
+      ellipse at top left,
+      rgba(255, 255, 255, .9) 40%,
+      $karry 100%
+    );
+  height: 100vh;
+  padding: 60px 80px;
+  width: 100vw;
+}
+
+#logo {
+  height: auto;
+  margin-bottom: 20px;
+  width: 420px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+main > div {
+  flex-basis: 50%;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+}
