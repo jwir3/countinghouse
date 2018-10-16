@@ -23,6 +23,16 @@ button {
 }
 
 .doc button.alt {
-  color: #42b983;
+  color: $lochinvar;
   background-color: transparent;
+  margin-left: 0.5em
+
+  &:first-child {
+    margin-left: none;
+  }
+
+  &:hover {
+    background-color: $lochinvar;
+    color: $white;
+  }
 }

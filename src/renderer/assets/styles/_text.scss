@@ -20,7 +20,19 @@ body {
   margin-bottom: 10px;
 }
 
+.doc {
+  margin-top: 2em;
+
+  &:first-child {
+    margin-top: 0em;
+  }
+}
+
 .doc p {
   color: black;
   margin-bottom: 10px;
+}
+
+.emphasis {
+  font-weight: bold;
 }

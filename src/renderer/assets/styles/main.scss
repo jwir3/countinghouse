@@ -3,6 +3,13 @@
 @import '~@/assets/styles/_buttons.scss';
 @import '~@/assets/styles/_colors.scss';
 
+/*
+ * This sucks, but it's better than having the margin ruin our background.
+ */
+.el-tabs__content > .full-pane {
+  margin: -15px -15px;
+}
+
 #wrapper {
   background:
     radial-gradient(
@@ -11,14 +18,14 @@
       $karry 100%
     );
   height: 100vh;
-  padding: 60px 80px;
+  padding: 10px 80px;
   width: 100vw;
 }
 
 #logo {
   height: auto;
   margin-bottom: 20px;
-  width: 420px;
+  width: 210px;
 }
 
 main {
